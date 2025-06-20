@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Informasi Profil</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#25587D', 
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], 
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        html, body { height: 100%; }
+    </style>
+
+</head>
+<body class="bg-white text-gray-800 w-[402px] h-[874px] mx-auto overflow-hidden shadow-xl border border-gray-300 flex flex-col relative">
+ 
+    <header class="bg-primary-blue text-white px-6 pb-8 pt-8 relative shadow-md flex-shrink-0">
+        <a onclick="history.back()" class="absolute top-8 left-5 text-2xl flex items-center justify-center">
+            <img src="./assets/back-arrow.png" alt="Back" class="w-6 h-6 object-contain filter brightness-0 invert">
+        </a>
+        <div class="flex items-center gap-6 mt-10">
+            <div class="w-20 h-20 rounded-full bg-gray-300 flex items-center justify-center flex-shrink-0">
+                <img src="./assets/user-icon.png" alt="User Icon" class="w-18 h-18 object-contain filter brightness-0 invert">
+            </div>
+            <div class="flex flex-col space-y-1"> 
+                <p class="text-sm">Mahasiswa</p>
+                <p class="font-bold text-lg leading-5">235150407111042</p>
+                <p class="text-sm text-white/90 leading-4">mahasiswa@student.ub.ac.id</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow py-4"> 
+        <div class="bg-white p-6 space-y-6 text-sm text-gray-700">
+            <div>
+                <p class="text-primary-blue text-sm">Nama</p>
+                <p class="font-semibold text-lg mt-1 text-primary-blue">Nama Mahasiswa</p>
+                <hr class="mt-3 border-gray-300">
+            </div>
+
+            <div>
+                <p class="text-primary-blue text-sm">Angkatan</p>
+                <p class="font-semibold text-lg mt-1 text-primary-blue">2023</p>
+                <hr class="mt-3 border-gray-300">
+            </div>
+
+            <div>
+                <p class="text-primary-blue text-sm">Status Akademik</p>
+                <p class="font-semibold text-lg mt-1 text-primary-blue">Aktif</p>
+                <hr class="mt-3 border-gray-300">
+            </div>
+
+            <div>
+                <p class="text-primary-blue text-sm">Fakultas</p>
+                <p class="font-semibold text-lg mt-1 text-primary-blue">Ilmu Komputer</p>
+                <hr class="mt-3 border-gray-300">
+            </div>
+
+            <div>
+                <p class="text-primary-blue text-sm">Jurusan</p>
+                <p class="font-semibold text-lg mt-1 text-primary-blue">Sistem Informasi</p>
+                <hr class="mt-3 border-gray-300">
+            </div>
+
+            <div>
+                <p class="text-primary-blue text-sm">Jenjang dan Program Studi</p>
+                <p class="font-semibold text-lg mt-1 text-primary-blue">S1 - Sistem Informasi</p>
+                <hr class="mt-3 border-gray-300">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
