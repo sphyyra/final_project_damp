@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laporan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-[#25587D] text-white p-4 text-center text-xl font-semibold">Laboratorium</header>
+
+  <!-- Top Tab Navigasi -->
+  <nav class="flex justify-around bg-white border-b mt-[-1px]">
+    <a href="pengajuan.html" class="py-2 px-4 text-gray-500">Pengajuan</a>
+    <a href="tracking.html" class="py-2 px-4 text-gray-500">Tracking</a>
+    <a href="laporan.html" class="py-2 px-4 font-semibold text-[#25587D] border-b-2 border-[#25587D]">Laporan</a>
+  </nav>
+
+  <main class="p-4">
+    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+      <div class="bg-[#25587D] text-white px-4 py-2 font-semibold text-sm">
+        Cacat Barang
+      </div>
+      <div class="p-4 space-y-1 text-sm">
+        <p><span class="font-semibold">Fikri Ramadhan</span> : 215150200111000</p>
+        <p><span class="font-semibold">Barang</span> : Macbook Air M1 13”</p>
+        <p><span class="font-semibold">Dilaporkan</span> : 1 Juni 2025</p>
+        <p><span class="font-semibold">Masalah</span> : Layar Kedap-Kedip</p>
+        <p><span class="font-semibold">Bukti</span> : <a href="#" class="text-blue-600 underline">[Lihat Foto]</a></p>
+        <p><span class="font-semibold">Status</span> : Belum Ditinjau</p>
+      </div>
+      <div class="p-4 pt-2 flex justify-center gap-4">
+        <button class="w-[120px] py-2 bg-gray-200 text-black font-semibold rounded-md shadow hover:bg-gray-300 flex items-center justify-center">
+          <img src="assets/icon-eye.png" alt="eye" class="w-5 h-5 mr-2"> Lihat
+        </button>
+        <button onclick="document.getElementById('popup-setujui').classList.remove('hidden')" class="w-[120px] py-2 bg-green-600 text-white font-semibold rounded-md shadow hover:bg-green-700">
+          Setujui
+        </button>
+      </div>
+    </div>
+  </main>
+  
+
+  <!-- Pop Up Konfirmasi Setujui -->
+  <div id="popup-setujui" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white rounded-2xl p-6 w-72 shadow-md text-center space-y-4">
+      <img src="assets/check-circle.png" alt="Setujui" class="w-16 h-16 mx-auto">
+      <p class="text-green-600 font-semibold text-sm">Pengajuan telah Disetujui</p>
+      <button onclick="document.getElementById('popup-setujui').classList.add('hidden')"
+        class="px-5 py-1.5 bg-gray-100 text-gray-800 rounded-md hover:bg-gray-200">
+        Ok
+      </button>
+    </div>
+  </div>
+
+  <!-- Bottom Navbar -->
+  <footer class="fixed bottom-0 w-full bg-white flex justify-around py-2 border-t z-50">
+    <a href="index.html" class="flex flex-col items-center text-xs text-gray-500">
+      <img src="assets/icon-home.png" class="w-5 h-5 mb-1" alt="home">
+      Beranda
+    </a>
+    <a href="pengajuan.html" class="flex flex-col items-center text-xs text-[#25587D] font-bold">
+      <img src="assets/icon-lab.png" class="w-5 h-5 mb-1" alt="lab">
+      Lab
+    </a>
+    <a href="praktikum.html" class="flex flex-col items-center text-xs text-gray-500">
+      <img src="assets/icon-praktikum.png" class="w-5 h-5 mb-1" alt="praktikum">
+      Praktikum
+    </a>
+    <a href="riwayat.html" class="flex flex-col items-center text-xs text-gray-500">
+      <img src="assets/icon-riwayat.png" class="w-5 h-5 mb-1" alt="riwayat">
+      Riwayat
+    </a>
+    <a href="profil.html" class="flex flex-col items-center text-xs text-gray-500">
+      <img src="assets/icon-profil.png" class="w-5 h-5 mb-1" alt="profil">
+      Profil
+    </a>
+  </footer>
+</body>
+</html>
