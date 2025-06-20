@@ -1,0 +1,81 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Notification</title>
+</head>
+
+<body class="bg-white font-inter min-h-screen flex flex-col">
+    <header class="bg-[#25587D] text-white py-6 pb-4 relative z-10 shadow-lg">
+        <div class="flex items-center mt-4 mb-4 ">
+            <button class="text-white text-2xl mr-4 pl-8" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1 class="text-xl font-semibold absolute left-1/2 -translate-x-1/2">Notifikasi</h1>
+        </div>
+    </header>
+
+<main class="mt-4 bg-white overflow-hidden">
+    <div class="flex overflow-x-auto space-x-2 pl-6 scrollbar-hide">
+        <button class="bg-orange-100 text-orange-700 px-3 py-1.5 rounded-md text-[10px] flex-shrink-0 font-semibold">Semua</button>
+        <button class="bg-gray-200 text-gray-600 px-3 py-1.5 rounded-md text-[10px] flex-shrink-0">Penugasan</button>
+        <button class="bg-gray-200 text-gray-600 px-3 py-1.5 rounded-md text-[10px] flex-shrink-0">Pengajuan Peminjaman</button>
+        <button class="bg-gray-200 text-gray-600 px-3 py-1.5 rounded-md text-[10px] flex-shrink-0">Laporan Pengaduan</button>
+        <button class="bg-gray-200 text-gray-600 px-3 py-1.5 rounded-md text-[10px] flex-shrink-0">Perekrutan Asisten Praktikum</button>
+        <button class="bg-gray-200 text-gray-600 px-3 py-1.5 rounded-md text-[10px] flex-shrink-0">Lain-lain</button>
+    </div>
+
+    <div class="divide-y border-gray-200 mt-1 px-6">
+        <div class="flex items-center py-3">
+            <div class="flex-shrink-0 w-8 h-8 rounded-md bg-blue-100 flex items-center justify-center text-blue-600 p-1 mr-[14px]">
+                <i class="fas fa-info text-base"></i> 
+            </div>
+            <div class="flex-1">
+                <h3 class="text-sm font-bold text-gray-900">Selamat Kamu Diterima!</h3>
+                <p class="text-[10px] text-[#595959] mt-1 line-clamp-2">
+                Selamat! Pendaftaranmu sebagai asisten praktikum pada mata kuliah Pemrograman Dasar diterima! Silakan <span class="text-blue-600 font-medium">cek email</span> untuk info selanjutnya.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex items-center py-3">
+            <div class="flex-shrink-0 w-8 h-8 rounded-md bg-orange-100 flex items-center justify-center text-orange-500 p-1 mr-[14px]">
+                <i class="fas fa-bell text-base"></i>
+            </div>
+            <div class="flex-1">
+                <h3 class="text-sm font-bold text-gray-900">Pendaftaranmu Ditolak!</h3>
+                <p class="text-[10px] text-[#595959] mt-1 line-clamp-2">
+                Kamu telah mendaftar asisten praktikum ke lebih dari 2 mata kuliah. Hubungi dosen terkait untuk menjadwalkan ulang.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex items-center py-3">
+            <div class="flex-shrink-0 w-8 h-8 rounded-md bg-blue-100 flex items-center justify-center text-blue-600 p-1 mr-[14px]">
+                <i class="fas fa-info text-base"></i> 
+            </div>
+            <div class="flex-1">
+                <h3 class="text-sm font-bold text-gray-900">Peminjamanmu Diterima!</h3>
+                <p class="text-[10px] text-[#595959] mt-1 line-clamp-2">
+                Terima kasih telah mengajukan peminjaman dengan tertib! Silakan hubungi petugas di Lobby G.1 untuk mengambil kunci.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex items-center py-3">
+            <div class="flex-shrink-0 w-8 h-8 rounded-md bg-orange-100 flex items-center justify-center text-orange-500 p-1 mr-[14px]">
+                <i class="fas fa-bell text-base"></i>
+            </div>
+            <div class="flex-1">
+                <h3 class="text-sm font-bold text-gray-900">Tugasmu terlewat!</h3>
+                <p class="text-[10px] text-[#595959] mt-1 line-clamp-2">
+                Segera kumpulkan tugasmu! Jangan sampai kamu mengumpulkan tugasmu melewati batas waktu yang telah ditentukan.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+</html>  
