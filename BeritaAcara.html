@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Penugasan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200 flex justify-center items-start py-10">
+    <div class="w-[390px] h-[844px] bg-gray-100 rounded-xl shadow-lg relative">
+      <!-- App Bar -->
+      <div class="bg-blue-900 text-white p-4 flex items-center rounded-t-xl">
+        <button class="mr-4">
+          <img src="back-arrow.png" alt="Back" class="w-5 h-5" />
+        </button>
+        <h1 class="text-lg font-semibold">Pemrograman Dasar</h1>
+      </div>
+
+      <!-- Scrollable Content -->
+      <div class="overflow-y-auto h-full pb-28 p-4">
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <!-- Header Card -->
+          <div class="bg-blue-900 text-white p-4 rounded-t-xl space-y-1">
+            <div class="flex justify-between items-center">
+              <span>Due May 29, 23:59</span>
+              <span class="font-semibold">Assigned</span>
+            </div>
+            <div>
+              <h2 class="text-base font-bold">Modul 8</h2>
+              <p class="text-sm">100 points</p>
+            </div>
+          </div>
+
+          <!-- Body Card -->
+          <div class="p-4 space-y-3">
+            <p class="mb-2 font-semibold">Your Work</p>
+            <p class="text-xs text-gray-500">Attachments</p>
+            <div
+              class="w-1/2 border border-gray-300 rounded-md p-5 text-center text-sm text-gray-800"
+            >
+              Laporan Modul 8.pdf
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Buttons -->
+      <div
+        class="absolute bottom-0 left-0 w-full bg-white p-4 border-t border-gray-200 space-y-2"
+      >
+        <button
+          class="w-full bg-blue-900 text-white font-semibold py-3 rounded-md hover:bg-blue-800 transition"
+        >
+          Kumpulkan
+        </button>
+        <button
+          class="w-full border border-blue-900 text-blue-900 font-semibold py-3 rounded-md hover:bg-blue-50 transition"
+        >
+          Tandai Selesai
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
