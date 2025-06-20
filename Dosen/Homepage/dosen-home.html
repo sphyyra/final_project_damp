@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=402, initial-scale=1.0" /> 
+    <title>Dosen-Home</title> 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"> 
+  </head>
+  <body
+    class="mx-auto bg-[#25587D]" 
+    style="width: 402px; ; font-family: Inter, sans-serif; height: 874px;" 
+  >  
+    <section class=""> 
+      <div class="bg-[#25587D] p-5 pb-10"> 
+        <div class=" pt-1 flex items-center justify-between"> 
+          <div> 
+            <p class="pt-1 px-1 text-white text-lg
+            font-bold">Halo, Kolo Muani!</p> 
+            <p class="px-1 text-white text-sm font-thin">Sudah Menggoreng Berapa Mahasiswa Hari Ini?
+          </p> 
+          </div>
+          <button class="gap-3 text-white px-2 py-2" onclick=" window.location.href='notif-all.html'"> 
+            <img src="assets/proicons_bell-dot.svg" class="w-10 h-10" alt="Check Icon"> 
+          </button>
+      </div>
+    </section>
+
+    <section class="pb-75 rounded-t-4xl bg-gray-100 space-y-6"> 
+      <div> 
+        <h2 class="p-7 pb-3 text-black font-semibold">Informasi Terbaru</h2> 
+        <div class="mx-auto w-90 bg-[#1C425E] text-white p-4 rounded-xl"> 
+          <h3 class="text-lg">
+            Pendaftaran Asisten Praktikum GENAP 24/25
+          </h3> 
+          <button
+            class="mt-3 bg-[#FFD9CF] text-[#541701] text-sm font-semibold px-4 py-2 rounded-md"
+            onclick="window.location.href='#'"
+          > 
+            Lihat Pendaftar
+          </button>
+        </div>
+      </div>
+
+      <div class=" w-90 mx-auto bg-white rounded-xl shadow-lg"> 
+        <div class="text-center bg-[#1C4D6D] text-white text-base px-4 py-3 rounded-t-xl"> 
+          Kelas Mendatang
+        </div>
+        <div class="px-4 py-3 space-y-4 text-sm text-gray-700"> 
+          <div class="space-y-1"> 
+            <p class="font-semibold text-black">Perancangan Pengalaman Pengguna</p> 
+            <div class="flex gap-1 justify-between"> 
+                <div class="flex gap-1">
+                  <img src="assets/Task.png" alt="Kelas"> 
+                  <p>Gedung G1.5</p> 
+                </div>
+                <div class="flex gap-1">
+                  <img src="assets/Clock.png" alt="Kelas"> 
+                  <p>7:00–8:40</p> 
+                </div>
+            </div>
+            <div class="flex gap-1"> 
+              <img src="assets/Calendar.png" alt="Kelas"> 
+              <p>Selasa, 20 Mei 2025</p> 
+            </div>  
+          </div>
+          <hr /> 
+
+          <div class="space-y-1"> 
+            <p class="font-semibold text-black">Perancangan Pengalaman Pengguna</p> 
+            <div class="flex gap-1 justify-between"> 
+                <div class="flex gap-1">
+                  <img src="assets/Task.png" alt="Kelas"> 
+                  <p>Gedung G1.4</p> 
+                </div>
+                <div class="flex gap-1">
+                  <img src="assets/Clock.png" alt="Kelas"> 
+                  <p>10:20–12:00</p> 
+                </div>
+            </div>
+            <div class="flex gap-1"> 
+              <img src="assets/Calendar.png" alt="Kelas"> 
+              <p>Selasa, 20 Mei 2025</p> 
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav
+      class="bg-white shadow-lg rounded-t-lg fixed w-full px-5 py-2"
+      style="
+        bottom: 0;
+        max-width: 402px;
+        left: 50%;
+        transform: translateX(-50%);
+      "
+    > 
+      <div class="flex justify-between items-center w-full"> 
+        <button class="flex flex-col items-center text-[#25587D] font-semibold"> 
+          <img src="assets/Component 5.svg" alt="Home Icon" class="w-6 h-6 mb-1"> 
+          <span class="text-xs">Beranda</span> 
+        </button>
+        <button class="flex flex-col items-center font-semibold"> 
+          <img src="assets/Component 6.svg" alt="Home Icon" class="w-6 h-6 mb-1"> 
+          <span class="text-xs text-[#8A8A8E]">Lab</span> 
+        </button>
+        <button class="flex flex-col items-center text-[#25587D] font-semibold"> 
+          <img src="assets/Monitor.svg" alt="Home Icon" class="w-6 h-6 mb-1"> 
+          <span class="text-xs text-[#8A8A8E]">Praktikum</span> 
+        </button>
+        <button class="flex flex-col items-center text-[#25587D] font-semibold"> 
+          <img src="assets/ri_history-line.svg" alt="Home Icon" class="w-6 h-6 mb-1"> 
+          <span class="text-xs text-[#8A8A8E]">Riwayat</span> 
+        </button>
+        <button class="flex flex-col items-center text-[#25587D] font-semibold"> 
+          <img src="assets/Group.svg" alt="Home Icon" class="w-6 h-6 mb-1"> 
+          <span class="text-xs text-[#8A8A8E]">Profil</span> 
+        </button>
+      </div>
+    </nav>
+  </body>
+</html>
