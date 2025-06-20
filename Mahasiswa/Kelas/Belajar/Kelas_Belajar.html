@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=402, initial-scale=1.0" />
+    <title>Pemrograman Dasar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white flex flex-col items-center min-h-screen">
+
+    <!-- Header -->
+    <div class="w-full max-w-full mx-auto bg-[#25587D] shadow-md relative z-10 h-[130px] flex items-center justify-center">
+        <!-- Back button (absolute kiri) -->
+        <button class="absolute left-6 top-1/2 -translate-y-1/2">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="22" height="22" fill="url(#pattern0_75_287)"/>
+                <defs>
+                    <pattern id="pattern0_75_287" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_75_287" transform="scale(0.01)"/>
+                    </pattern>
+                    <image id="image0_75_287" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJ0lEQVR4nO3cQUrFMBRA0eIy3IauwKFO3IsbcBNO6yoFceATxM4V+f5bew50HrgkIaRkWQAAAAAAAACA3ZqZ65m5OPc4WD5j3M3M68w8i9KJsRElFGMjSijGRpRQjI0ofxDjfmbe5vueTj6oo/rBzNi8zMzNucf9L4kRIkaIGCFihIgRIkaIGCFihIgRIkaIGCFihIgRIkaIGCFihIix72vX95l5mJmrA3yX9WvXo3kU44hBzIxQEDF6QW7tG70lS5Tgpi5KKYgowSBfURwMJ3Iw/MXy5b/cUxMlSJQgUYJECRIlSJQgUYJECRIlSJQgUYJECRIlSJQgUYJECRIlaDzPtOuZsnoUsxNlFaMTZRWjE2UVoxNlFSNiPDUOAAAAAAAAAMvRfQDWuFnt0ZbA9wAAAABJRU5ErkJggg=="/>
+                </defs>
+            </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+            </svg>
+        </button>
+        <!-- Centered Title -->
+        <span class="text-white font-semibold text-[16px] leading-[40px]">Pemrograman Dasar</span>
+    </div>
+
+    <!-- Main Content -->
+    <main class="w-[402px] px-0 pt-0 pb-6">
+        <!-- Card Kelas Utama -->
+        <div class="mx-auto mt-6 mb-6 w-[362px] h-[149px] bg-gradient-to-b from-[#25587D] to-[#43A0E3] rounded-lg shadow flex flex-col justify-start px-3">
+            <div class="text-white text-[24px] leading-[40px] font-semibold mb-1 mt-3">Pemrograman Dasar</div>
+            <div class="text-white text-[12px] leading-[15px] opacity-90 mb-1">SI D (Senin 07:00 | G1.2)</div>
+        </div>
+
+        <!-- List Card Tugas/Material -->
+        <div class="flex flex-col gap-4 items-center">
+
+            <!-- Card 1 -->
+            <div class="w-[358px] h-[90px] bg-white border border-[#25587D] rounded-lg flex items-center px-6 shadow-sm hover:bg-blue-50 transition group">
+                <!-- Icon bulat -->
+                <div class="w-[39px] h-[39px] rounded-full bg-[#25587D] flex items-center justify-center mr-5 aspect-square">
+                    <!-- Book Icon -->
+                    <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5833 0H2.08333C0.9375 0 0 0.9375 0 2.08333V18.75C0 19.8958 0.9375 20.8333 2.08333 20.8333H14.5833C15.7292 20.8333 16.6667 19.8958 16.6667 18.75V2.08333C16.6667 0.9375 15.7292 0 14.5833 0ZM2.08333 2.08333H7.29167V10.4167L4.6875 8.85417L2.08333 10.4167V2.08333Z" fill="#F9F9F9"/>
+                    </svg>
+                </div>
+                <div>
+                <div class="font-bold text-[#25587D] text-[13px] leading-[16px] mb-1">New material - Modul 1: Konsep dasar pemograman 1</div>
+                <div class="text-[#6C7278] text-[10px] leading-[12px]">Posted 20 May</div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="w-[358px] h-[90px] bg-white border border-[#25587D] rounded-lg flex items-center px-6 shadow-sm hover:bg-blue-50 transition group">
+                <!-- Icon bulat -->
+                <div class="w-[39px] h-[39px] rounded-full bg-[#25587D] flex items-center justify-center mr-5 aspect-square">
+                    <!-- Assignment Icon -->
+                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H3V4H15V0H18V20H0V0ZM12 10V8H6V10H12ZM12 14V12H6V14H12Z" fill="white"/>
+                    </svg>
+                </div>
+                <div>
+                <div class="font-bold text-[#25587D] text-[13px] leading-[16px] mb-1">New assigment - Latihan dasar 1</div>
+                <div class="text-[#6C7278] text-[10px] leading-[12px]">Posted 20 May</div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="w-[358px] h-[90px] bg-white border border-[#25587D] rounded-lg flex items-center px-6 shadow-sm hover:bg-blue-50 transition group">
+                <!-- Icon bulat -->
+                <div class="w-[39px] h-[39px] rounded-full bg-[#25587D] flex items-center justify-center mr-5 aspect-square">
+                    <!-- Book Icon -->
+                    <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5833 0H2.08333C0.9375 0 0 0.9375 0 2.08333V18.75C0 19.8958 0.9375 20.8333 2.08333 20.8333H14.5833C15.7292 20.8333 16.6667 19.8958 16.6667 18.75V2.08333C16.6667 0.9375 15.7292 0 14.5833 0ZM2.08333 2.08333H7.29167V10.4167L4.6875 8.85417L2.08333 10.4167V2.08333Z" fill="#F9F9F9"/>
+                    </svg>
+                </div>
+                <div>
+                <div class="font-bold text-[#25587D] text-[13px] leading-[16px] mb-1">New material - Modul 2: Konsep dasar pemograman 2</div>
+                <div class="text-[#6C7278] text-[10px] leading-[12px]">Posted 23 May</div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="w-[358px] h-[90px] bg-white border border-[#25587D] rounded-lg flex items-center px-6 shadow-sm hover:bg-blue-50 transition group">
+                <!-- Icon bulat -->
+                <div class="w-[39px] h-[39px] rounded-full bg-[#25587D] flex items-center justify-center mr-5 aspect-square">
+                    <!-- Assignment Icon -->
+                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H3V4H15V0H18V20H0V0ZM12 10V8H6V10H12ZM12 14V12H6V14H12Z" fill="white"/>
+                    </svg>
+                </div>
+                <div>
+                <div class="font-bold text-[#25587D] text-[13px] leading-[16px] mb-1">New assigment - Latihan dasar 2</div>
+                <div class="text-[#6C7278] text-[10px] leading-[12px]">Posted 23 May</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
