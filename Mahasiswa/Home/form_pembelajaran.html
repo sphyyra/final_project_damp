@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pengaduan Kualitas Pembelajaran</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#25587D',
+                        'border-gray': '#CCCCCC',
+                        'dark-gray': '#595959',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url('./assets/down-arrow.png');
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 1em 1em;
+            padding-right: 2.5rem;
+        }
+
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 w-[402px] h-[874px] mx-auto overflow-hidden shadow-xl border border-gray-300 flex flex-col relative">
+
+    <header class="bg-primary-blue text-white h-[130px] flex items-center flex-shrink-0 z-10 shadow-md">
+        <button onclick="location.href='pengaduan.html'" class="flex items-center justify-center w-8 h-8 ml-5 flex-shrink-0">
+            <img src="./assets/back-arrow.png" alt="Back" class="w-6 h-6 object-contain filter brightness-0 invert">
+        </button>
+
+        <h1 class="text-lg font-semibold flex-grow text-center">Kualitas Pembelajaran</h1>
+
+        <div class="w-8 h-8 mr-5 flex-shrink-0"></div>
+    </header>
+
+    <main class="flex-grow pt-4 px-5 pb-4 overflow-y-auto">
+
+        <form class="space-y-4">
+            <div>
+                <label for="mata_kuliah" class="block text-dark-gray text-base font-medium mb-1">Mata Kuliah:</label>
+                <select id="mata_kuliah" name="mata_kuliah" class="h-[48px] border border-border-gray rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-primary-blue">
+                    <option value="">Pilih Mata Kuliah</option>
+                    <option value="pemrograman-dasar">Pemrograman Dasar</option>
+                    <option value="pemrograman-sql">Pemrograman SQL</option>
+                    <option value="pemrograman-lanjut">Pemrograman Lanjut</option>
+                    <option value="administrasi-basis-data">Administrasi Basis Data</option>
+                    <option value="perancangan-pengalaman-pengguna">Perancangan Pengalaman Pengguna</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nama_asisten" class="block text-dark-gray text-base font-medium mb-1">Nama Asisten Praktikum:</label>
+                <select id="nama_asisten" name="nama_asisten" class="h-[48px] border border-border-gray rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-primary-blue">
+                    <option value="">Pilih Asisten</option>
+                    <option value="aziz">Aziz</option>
+                    <option value="mufida">Mufida</option>
+                    <option value="icha">Icha</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="tanggal_kejadian" class="block text-dark-gray text-base font-medium mb-1">Tanggal Kejadian:</label>
+                <input type="date" id="tanggal_kejadian" name="tanggal_kejadian" class="h-[48px] border border-border-gray rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-primary-blue">
+            </div>
+
+            <div>
+                <label for="deskripsi_keluhan" class="block text-dark-gray text-base font-medium mb-1">Deskripsi Keluhan:</label>
+                <textarea id="deskripsi_keluhan" name="deskripsi_keluhan" rows="4" class="border border-border-gray rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-primary-blue resize-y" placeholder="Jelaskan keluhan Anda secara detail"></textarea>
+            </div>
+
+            <div>
+                <label for="saran_perbaikan" class="block text-dark-gray text-base font-medium mb-1">Saran Perbaikan:</label>
+                <textarea id="saran_perbaikan" name="saran_perbaikan" rows="4" class="border border-border-gray rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-primary-blue resize-y" placeholder="Berikan saran untuk perbaikan"></textarea>
+            </div>
+
+            <div class="flex items-center justify-center pt-2">
+                <button type="submit" class="bg-primary-blue hover:bg-blue-700 text-white font-bold h-[50px] w-full rounded-[10px] focus:outline-none focus:shadow-outline">
+                    Kirim
+                </button>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>
